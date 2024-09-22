@@ -1,0 +1,116 @@
+/* 
+*  global css variables
+*/
+
+/* Font links */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Standard preset variables for all pages */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    user-select: none;
+    overflow-x: hidden !important;
+}
+
+body.disable-scroll {
+    overflow: hidden !important;
+}
+
+h1,h2,h3,p,a,input {
+    font-family: var(--fontOne);
+    color: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+/* Wraps all the content */
+#pagewrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Structured container */
+.container {
+    max-width: 1600px;
+    margin: 0 1.3rem;
+    display: flex;
+}
+
+/* Color scheme */
+:root {
+    --white: #F5F5F5;
+    --black: #20232C;
+    --main: #20232C;
+    --gray: #A6A6A6;
+    --gray_hover: #898989;
+
+    --fontOne: "Russo One", sans-serif;
+    --fontTwo: "Quicksand", sans-serif;
+}
+
+/* 
+*   Global sizes 
+*/
+:root {
+    /* Fontsizes */
+    --large-xxl: 58px;
+    --large-xl: 38px;
+    --large-l: 28px;
+    --medium-m: 22px;
+    --small-s: 18px;
+    --small-xs: 16px;
+}
+
+h1 {
+    font-size: var(--large-xl)
+}
+
+h2 {
+    font-size: var(--large-l);
+}
+
+h3 {
+    font-size: var(--medium-m);
+}
+
+p {
+    font-size: var(--small-s);
+}
+
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: var(--medium-m);
+    }
+    h3 {
+        font-size: var(--medium-m);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h2 {
+        font-size: var(--small-s);
+    }
+    h3 {
+        font-size: var(--small-s);
+    }
+    p {
+        font-size: var(--small-xs);
+    }
+}
