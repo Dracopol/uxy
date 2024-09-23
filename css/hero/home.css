@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--light_blue);
 }
 
 #hero-home img {
@@ -42,6 +43,7 @@
 
 #hero-home .container .title h1 {
     font-family: var(--fontOne);
+    color: var(--white);
     font-weight: 400;
     font-size: 110px;
     white-space: nowrap;
@@ -53,6 +55,7 @@
 
 #hero-home .container p {
     font-family: var(--fontTwo);
+    color: var(--white);
     font-weight: 500;
     font-size: 22px;
 }
@@ -125,10 +128,6 @@
     }
     #hero-home img {
         display: none;
-    }
-    
-    #hero-home #background-mobile {
-        display: block !important;
     }
 }
 
