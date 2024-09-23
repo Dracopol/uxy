@@ -43,11 +43,10 @@ header .container ul span {
     z-index: 2;
     height: 30px;
     width: 2px;
-    background-color: var(--gray);
 }
 
 header .container ul li a {
-    color: var(--black);
+    color: var(--white);
     font-size: var(--small-xs);
     font-weight: 500;
     font-family: var(--fontTwo);
@@ -75,7 +74,7 @@ header .container .menu {
 header .container .menu span {
     width: 50px;
     height: 3px;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 header .container .menu:hover {
