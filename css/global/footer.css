@@ -1,0 +1,217 @@
+/* Footer SECTION */
+
+footer {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--dark);
+    z-index: 5;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+footer .container {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer .container .information {
+    width: 100%;
+    height: max-content;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.156);
+}
+
+footer .container .information .navigation {
+    display: flex;
+    gap: 100px;
+    white-space: nowrap;
+}
+
+footer .container .information .box {
+    width: max-content;
+    color: var(--white);
+    font-family: var(--fontOne);
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+}
+
+footer .container .information .title {
+    font-family: var(--fontOne);
+    font-size: 28px !important;
+    font-weight: 500;
+}
+
+footer .container .information .box:nth-child(1) {
+    width: 34%;
+}
+
+footer .container .information .box:nth-child(1) p {
+    width: 85%;
+}
+
+footer .container .information .box:nth-child(2) p:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+footer .container .information .box img {
+    margin-bottom: 20px;
+    max-height: 65px;
+}
+
+footer .container .information .box h2 {
+    font-family: var(--fontOne);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+footer .container .information .box a {
+    color: var(--paragraph);
+    text-decoration: none;
+    font-family: var(--fontTwo);
+}
+
+footer .container .information .box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer .container .information .box ul li a {
+    color: var(--paragraph);
+}
+
+footer .container .information .box a:hover,
+footer .container .information .box ul li a:hover {
+    color: var(--white);
+}
+
+footer .container .information .box ul li a i {
+    color: var(--white);
+    margin-right: 10px;
+    min-width: 22px;
+}
+
+footer .container .bottom {
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer .container .bottom .socials {
+    height: 100%;
+    width: max-content;
+    display: flex;
+    gap: 10px;
+}
+
+footer .container .bottom .socials .icon {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .bottom .socials .icon:hover {
+    cursor: pointer;
+}
+
+footer .container .bottom .socials .icon i {
+    color: var(--white);
+    font-size: 24px;
+}
+
+footer .container .bottom .copyright {
+    width: 100%;
+    height: max-content;
+}
+
+footer .container .bottom .copyright p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--white);
+    font-family: var(--fontTwo);
+    font-weight: 500;
+}
+
+footer .container button {
+    margin-top: 35px;
+    padding: 15px;
+    background-color: var(--white);
+    color: var(--dark);
+    border-radius: 50px;
+    width: 160px;
+}
+
+footer .container button:hover {
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 920px) {
+    footer .container .information {
+        flex-direction: column;
+            padding-top: 20px;
+    }
+    footer .container .information .box {
+        width: 100% !important;
+    }
+    footer .container .information .box h2 {
+        margin-bottom: 20px;
+    }
+    footer .container .information .box:nth-child(1) p {
+        width: 100%;
+        max-width: 500px;
+    }
+    footer .container .information .navigation {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    footer .container .information .box h2 {
+        font-size: 20px;
+    }
+    footer .container .information .box {
+        font-size: 16px;
+    }
+    footer .container .bottom .socials .icon {
+        width: 40px;
+        height: 40px;
+    }
+    footer .container .bottom .socials .icon:hover i {
+    font-size: 20px;
+    }
+    footer .container .bottom .socials .icon i {
+        font-size: 18px;
+    }
+}
+

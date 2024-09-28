@@ -1,4 +1,9 @@
 /* Hero section home */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #hero-home {
     position: relative;
     overflow: hidden;
