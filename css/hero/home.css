@@ -13,7 +13,7 @@ main {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    /* margin-top: -90px; */
+    margin-top: -90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,6 @@ main {
     background-color: transparent;
     color: var(--black);
     cursor: pointer;
-    background-color: aquamarine;
 }
 
 #hero-home .container button::after {
@@ -148,6 +147,9 @@ main {
 @media only screen and (max-width: 920px) {
     #hero-home .container p {
         font-size: var(--small-s);
+    }
+    #hero-home svg {
+        display: none;
     }
 }
 

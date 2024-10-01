@@ -7,7 +7,7 @@ footer {
     justify-content: center;
     position: relative;
     background-color: var(--dark);
-    z-index: 5;
+    z-index: 6;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 }
@@ -159,6 +159,7 @@ footer .container button {
     margin-top: 35px;
     padding: 15px;
     background-color: var(--white);
+    border: none;
     color: var(--dark);
     border-radius: 50px;
     width: 160px;

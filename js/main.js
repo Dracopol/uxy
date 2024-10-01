@@ -27,3 +27,23 @@ window.addEventListener('scroll', () => {
     svgElement.style.left = `${leftPosition}%`;
     svgElement.style.transform = `translateY(-50%) rotate(${rotation}deg) scale(${scale})`;
 });
+
+// Menu
+const menu = document.getElementById('menu');
+const menuToggle = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('#menu li');
+const body = document.body;
+
+// Toggle menu for icon
+menuToggle.addEventListener('click', function() {
+    menu.classList.toggle('open');
+    body.classList.toggle('disable-scroll');
+});
+
+// Toggle menu items
+menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+        menu.classList.remove('open');
+        body.classList.remove('disable-scroll');
+    });
+});
