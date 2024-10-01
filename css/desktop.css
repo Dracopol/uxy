@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    user-select: none; /* Disable text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For IE/Edge */
+}
+
+:root {
+    --white: #FDFEFF;
+    --black: #20232C;
+    --green: #DDF344;
+    --light_purple: #ABC4FF;
+    --dark_purple: #4849E8;
+
+    --fontOne: "Russo One", sans-serif;
+    --fontTwo: "Quicksand", sans-serif;
+
+    --big: 4.5rem;
+    --medium: 2rem;
+    --small: 1.2rem;
+
+    --shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    --small_shadow: -1px 1px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+
+    grid-row-gap: 5vh;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    display: flex;
+}
+
+/* .container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark_purple);
+
+} */
+
+.footer {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--black);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+h1 {
+    padding-top: 7vh;
+    font-family: var(--fontOne);
+    color: var(--white);
+    font-size: var(--big);
+    margin: 0;
+    text-shadow: var(--shadow);
+}
+
+h2 {
+    font-family: var(--fontOne);
+    color: var(--white);
+    font-size: var(--medium);
+    margin: 0;
+    text-shadow: var(--shadow);
+}
+
+p {
+    font-family: var(--fontTwo);
+    color: var(--white);
+    font-size: var(--small);
+    margin: 0;
+    text-shadow: var(--small_shadow);
+}
+
+.btn {
+    margin-top: 5vh;
+    background-color: var(--white);
+    color: black;
+    padding: 12.5px 50px;
+    font-family: var(--fontTwo);
+    font-size: var(--small);
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: var(--shadow); 
+}
+
+.btn:hover {
+    background-color: var(--green);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: +4px;
+    bottom: +4px;
+    border: 2px solid var(--black);
+}
+
+.btn:active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.studio_wrapper {
+    position: absolute; 
+    right: 5%; 
+    top: 175vh; 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio_text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.circular-image {
+    width: 30vw; 
+    height: 30vw;
+    border-radius: 50%; 
+    box-shadow: var(--shadow); 
+    object-fit: cover; 
+}
+
+.contact_wrapper {
+    position: absolute; 
+    right: 15%; 
+    top: 265vh; 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;  
+    row-gap: 5vh;     
+}
+
+.lol{
+    width: 50px;
+    height: 50px;
+    background-color: #FDFEFF;
+}
+
+.text-input {
+    padding: 0;
+    font-family: var(--fontTwo);
+    width: 20vw;
+    font-size: var(--small);
+    border: none; 
+    border-bottom: 2px solid var(--white); 
+    outline: none; 
+    transition: border-color 0.3s;
+    background-color: transparent;
+    color: var(--green);
+}
+
+.text-input::placeholder {
+    color: var(--white);
+}
+
+.text-input:focus {
+    border-bottom-color: var(--green); 
+}
+
+.text-input-2 {
+    padding: 0;
+    font-family: var(--fontTwo);
+    width: 45vw;
+    font-size: var(--small);
+    border: none; 
+    border-bottom: 2px solid var(--white); 
+    outline: none; 
+    transition: border-color 0.3s;
+    background-color: transparent;
+    color: var(--green);
+}
+
+.text-input-2::placeholder {
+    color: var(--white);
+}
+
+.text-input-2:focus {
+    border-bottom-color: var(--green); 
+}
+
+.svg-animation {
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    width: 20vw;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+    filter: url(#shadow); /* Apply the shadow filter */
+    z-index: 99;
+}
+
+.background-wrapper{
+    background: linear-gradient(to bottom, var(--light_purple), var(--dark_purple));
+}
+
