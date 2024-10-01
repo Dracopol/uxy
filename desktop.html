@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UXY</title>
+    <link rel="stylesheet" href="css\desktop.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <svg class="svg-animation" id="svgElement" viewBox="0 0 799 799" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="5" /> <!-- Blur effect -->
+                <feOffset dx="5" dy="5" result="offsetblur" /> <!-- Offset shadow -->
+                <feFlood flood-color="rgba(0, 0, 0, 0.5)" /> <!-- Shadow color -->
+                <feComposite in2="offsetblur" operator="in" /> <!-- Composite -->
+                <feMerge>
+                    <feMergeNode /> <!-- Original element -->
+                    <feMergeNode in="SourceGraphic" /> <!-- Merged with original -->
+                </feMerge>
+            </filter>
+        </defs>
+        <path
+            d="M2.75557 200.429H65.2457H229.692C249.624 200.429 265.79 184.273 265.79 164.353V162.364C265.79 151.533 260.738 141.496 252.532 134.428C236.275 120.414 225.987 99.6678 225.987 76.5046C225.987 32.565 263.034 -2.68468 307.583 0.160993C344.905 2.54769 375.553 32.412 378.799 69.6505C381.064 95.9042 370.073 119.71 351.763 135.07C343.742 141.802 339.302 151.869 339.302 162.334V164.323C339.302 184.242 355.468 200.399 375.4 200.399H539.846H598.295L598.448 201.255V263.83V428.175C598.448 448.095 614.614 464.251 634.546 464.251H636.536C647.375 464.251 657.417 459.202 664.49 451.002C678.512 434.754 699.271 424.473 722.448 424.473C766.415 424.473 801.686 461.497 798.839 506.018C796.451 543.318 766.568 573.947 729.307 577.19C703.037 579.455 679.217 568.47 663.847 550.172C657.111 542.155 647.038 537.718 636.567 537.718H634.576C614.645 537.718 598.478 553.874 598.478 573.794V738.139V797.807L596.948 798.969H537.244H372.798C352.866 798.969 336.7 782.813 336.7 762.894V760.905C336.7 750.44 341.139 740.373 349.161 733.641C367.47 718.281 378.462 694.475 376.196 668.221C372.951 630.983 342.333 601.119 304.98 598.732C260.432 595.886 223.385 631.136 223.385 675.076C223.385 698.239 233.672 718.985 249.93 732.999C258.135 740.067 263.187 750.103 263.187 760.935V762.924C263.187 782.844 247.021 799 227.089 799H62.6126H0L0.428644 798.388V738.721V574.375C0.428644 554.456 16.5946 538.3 36.5266 538.3H38.5167C48.9879 538.3 59.061 542.736 65.7968 550.753C81.1668 569.051 104.987 580.036 131.257 577.772C168.518 574.528 198.401 543.93 200.789 506.599C203.636 462.078 168.365 425.054 124.399 425.054C101.221 425.054 80.4626 435.335 66.4398 451.583C59.3672 459.783 49.3246 464.832 38.4861 464.832H36.496C16.564 464.832 0.398027 448.676 0.398027 428.756V264.411V201.837"
+            fill="#DDF344" />
+    </svg>
+    <div class="background-wrapper">
+        <div class="container">
+            <h1>The missing piece<br>your business needs.</h1>
+            <p>Welcome to Uxynergy; where creativity, fun, and innovation are at the heart of everything we create.</p>
+            <div class="btn">Contact us</div>
+        </div>
+    <div class="container">
+        <div class="studio_wrapper">
+            <div class="studio_text_wrapper">
+                <h2>Our studio</h2>
+                <p>
+                    At Uxynergy, our studio is where creativity comes to life.<br> We believe in creating experiences
+                    that are<br>
+                    not just visually striking but also fun and engaging.<br> Our dynamic team of innovators pushes
+                    the<br>
+                    boundaries of design and technology to deliver<br> eye-catching solutions that captivate and
+                    inspire.<br>
+                    <br>
+                    From the moment you step into our studio,<br> you'll feel the energy and passion that drives
+                    everything<br>
+                    we do. With a focus on collaboration,<br> bold ideas, and a playful approach to design, we turn
+                    visions<br>
+                    into reality; always with a touch of fun that keeps things exciting.
+                </p>
+            </div>
+
+            <div>
+                <img src="assets\img\mockup.png" alt="" class="circular-image">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact_wrapper">
+            <div class="grid-container">
+                <input type="text" placeholder="Name" class="text-input">
+                <input type="text" placeholder="Email" class="text-input">
+                <input type="text" placeholder="Subject" class="text-input">
+                <input type="text" placeholder="Phone" class="text-input">
+            </div>
+            <input type="text" placeholder="Message" class="text-input-2">
+            <div class="btn">Submit</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+
+</html>
