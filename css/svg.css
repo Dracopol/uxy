@@ -1,0 +1,42 @@
+.line {
+    height: 120%;
+    position: absolute;
+    right: -5%;
+    top: -5vh;
+    z-index: 5;
+}
+
+.puzzle-1 {
+    position: absolute;
+    top: 25%;
+    left: 72%;
+    width: 15vw;
+    transform: translateY(-50%) rotate(-30deg) scale(0.25);
+    filter: url(#shadow);
+    z-index: 99;
+}
+
+.puzzle-2 {
+    position: absolute;
+    top: 47%;
+    left: 80%;
+    width: 15vw;
+    transform: translateY(-50%) rotate(-10deg) scale(0.5);
+    filter: url(#shadow);
+    z-index: 99;
+}
+
+.puzzle-3 {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    width: 15vw;
+    transform: translateY(-50%) rotate(20deg) scale(1);
+    filter: url(#shadow);
+    z-index: 99;
+}
+
+.puzzle-3-aniamting {
+    position: fixed;
+    top: 50%;
+}

@@ -13,7 +13,7 @@ main {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    margin-top: -90px;
+    /* margin-top: -90px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +79,7 @@ main {
     background-color: transparent;
     color: var(--black);
     cursor: pointer;
+    background-color: aquamarine;
 }
 
 #hero-home .container button::after {
@@ -92,6 +93,41 @@ main {
     background-color: var(--white);
 }
 
+.btn {
+    margin-top: 5vh;
+    background-color: var(--white);
+    color: black;
+    padding: 12.5px 50px;
+    font-family: var(--fontTwo);
+    font-size: var(--small);
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: var(--shadow); 
+}
+
+.btn:hover {
+    background-color: var(--green);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: +4px;
+    bottom: +4px;
+    border: 2px solid var(--black);
+}
+
+.btn:active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 #hero-home .container button:hover {
     cursor: pointer;
