@@ -93,6 +93,13 @@ main {
 }
 
 .btn {
+    font-size: 18px;
+    font-family: var(--fontTwo);
+    width: 230px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5vh;
     background-color: var(--white);
     color: black;
@@ -102,7 +109,7 @@ main {
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: var(--shadow); 
+    /* box-shadow: var(--shadow);  */
 }
 
 .btn:hover {
@@ -112,10 +119,10 @@ main {
 .btn::before {
     content: '';
     position: absolute;
-    top: -4px;
-    left: -4px;
-    right: +4px;
-    bottom: +4px;
+    top: -8px;
+    left: -8px;
+    right: +8px;
+    bottom: +8px;
     border: 2px solid var(--black);
 }
 
