@@ -1,0 +1,104 @@
+.one_screen {
+    height: 100vh;
+    width: 100%;
+
+    grid-row-gap: 5vh;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    display: flex;
+}
+
+.studio_wrapper {
+    position: absolute; 
+    right: 5%; 
+    top: 175vh; 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio_text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.circular-image {
+    width: 30vw; 
+    height: 30vw;
+    border-radius: 50%; 
+    box-shadow: var(--shadow); 
+    object-fit: cover; 
+}
+
+.contact_wrapper {
+    position: absolute; 
+    right: 15%; 
+    top: 265vh; 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;  
+    row-gap: 5vh;     
+}
+
+.lol {
+    width: 50px;
+    height: 50px;
+    background-color: #FDFEFF;
+}
+
+.text-input {
+    padding: 0;
+    font-family: var(--fontTwo);
+    width: 20vw;
+    font-size: var(--small);
+    border: none; 
+    border-bottom: 2px solid var(--black); 
+    outline: none; 
+    transition: border-color 0.3s;
+    background-color: transparent;
+    color: var(--light_blue);
+}
+
+.text-input::placeholder {
+    color: var(--black);
+}
+
+.text-input:focus {
+    border-bottom-color: var(--light_blue); 
+}
+
+.text-input-2 {
+    padding: 0;
+    font-family: var(--fontTwo);
+    width: 45vw;
+    font-size: var(--small);
+    border: none; 
+    border-bottom: 2px solid var(--black); 
+    outline: none; 
+    transition: border-color 0.3s;
+    background-color: transparent;
+    color: var(--light_blue);
+}
+
+.text-input-2::placeholder {
+    color: var(--black);
+}
+
+.text-input-2:focus {
+    border-bottom-color: var(--light_blue); 
+}
