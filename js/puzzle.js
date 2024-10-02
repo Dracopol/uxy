@@ -50,3 +50,19 @@ window.addEventListener('scroll', () => {
     svgElement.style.left = `${leftPosition}%`;
     svgElement.style.transform = `translateY(-50%) rotate(${rotation}deg) scale(${scale})`;
 });
+
+
+  document.querySelectorAll('a[href="#hero-studio"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); 
+
+
+      const targetScrollPosition = document.documentElement.scrollHeight / 3;
+
+
+      window.scrollTo({
+        top: targetScrollPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
